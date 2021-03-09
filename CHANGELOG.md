@@ -6,6 +6,23 @@ All notable changes to the YuLang compiler will be documented in this file.
 
 ### Added
 
+* More declarations of C standard library functions.
+* Read operations of `IO` library.
+
+### Changed
+
+* A warning will be given when encountering a combination of `extern`/`inline` and `import`.
+* Some method name in standard library module `strview`.
+
+### Fixed
+
+* Value evaluation process on `VarLetDefAST`.
+* Bugs about counting down in standard library module `range`.
+
+## 0.0.4 - 2021-03-05
+
+### Added
+
 * Relational operations between pointers.
 * Perform multiple type casting operations at once (e.g. `x as u8 as i32`).
 * Modules in standard library (`Queue`, `StrView`, `HashMap`)
@@ -26,6 +43,7 @@ All notable changes to the YuLang compiler will be documented in this file.
 * Value evaluation process on `ImportAST`.
 * Bugs about file existence check.
 * Bugs about alignment of structures.
+* Compilation errors in some LLVM versions.
 
 ## 0.0.3 - 2020-04-03
 
